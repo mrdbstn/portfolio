@@ -1,0 +1,79 @@
+@import url('./Visuelt/Visuelt.css');
+
+@keyframes intro_left {
+  from {
+    opacity: 0;
+    margin-left: 12%
+  } 
+
+  to {
+    opacity: 1;
+    margin-left: 15%
+  }
+}
+
+@keyframes intro_right {
+  from {
+    opacity: 0;
+    margin-right: 12%
+  } 
+
+  to {
+    opacity: 1;
+    margin-right: 15%
+  }
+}
+
+@keyframes intro_up {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.introtext {
+  font-family: 'Visuelt Pro';
+  color: rgb(234,234,234);
+  width: 100%;
+  font-size: 9.5vw;
+  text-align: left;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.introtext > p {
+  opacity: 0;
+  margin: 0 5%;
+}
+
+.even > p {
+  text-align: right;
+  font-style: italic;
+  opacity: 0;
+}
+
+.zero > p {
+  animation: intro_up 1s forwards 0.4s;
+  margin-left: 5%;
+}
+
+.one > p {
+  animation: intro_up 1s forwards 0.6s;
+  margin-left: 15%;
+}
+
+.two > p{
+  animation: intro_up 1s forwards 0.8s;
+  margin-right: 10%;
+}
+
+.three > p {
+  animation: intro_up 1s forwards 1s;
+  margin-right: 5%;
+  margin-bottom: 20px;
+}

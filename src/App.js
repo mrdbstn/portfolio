@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import "./components/IntroText/IntroText.css"
+
+import IntroText from './components/IntroText/IntroText';
+import Case from './components/Cases/Cases';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="hero-list">
+        <IntroText text="Mourad" number="zero"/>
+        <IntroText text="Boustani" number="one" />
+        <IntroText text="Webdesigner +" number="two" orientation="even"/>
+        <IntroText text="Developer" number="three" orientation="even"/>
+      </div>
+      <div className="cases">
+        <IntroText fontsize="8vw" color="rgb(32,32,32)" number="zero" text="Ik ben een freelancer die werkt voor uw resultaten:"/>
+        <Case />
+      </div>
+      
     </div>
   );
 }
