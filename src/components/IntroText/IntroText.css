@@ -111,6 +111,11 @@
   -webkit-animation: intro_up 1s forwards 1s;
           animation: intro_up 1s forwards 1s;
   margin-right: 5%;
-  margin-bottom: 20px;
+}
+
+.four > p {
+  -webkit-animation: intro_up 1s forwards 1s;
+          animation: intro_up 1s forwards 1s;
+  margin-left: 10%;
 }
 /*# sourceMappingURL=IntroText.css.map */

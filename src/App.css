@@ -6,12 +6,4 @@ body, html {
   background: rgba(32,32,32);
 }
 
-.hero-list {
-  margin-top: 5vh;
-}
 
-.cases {
-  height: 100vh;
-  background: rgb(234,234,234);
-  padding-top: 4vh ;
-}

@@ -1,0 +1,73 @@
+@import url("../IntroText/Visuelt/Visuelt.css");
+@-webkit-keyframes intro_up {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes intro_up {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes bounce {
+  33% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  66% {
+    -webkit-transform: translateY(-5vw);
+            transform: translateY(-5vw);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes bounce {
+  33% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  66% {
+    -webkit-transform: translateY(-5vw);
+            transform: translateY(-5vw);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+.hero__list {
+  position: relative;
+  margin: 5vh 0;
+}
+
+.arrow {
+  font-family: "Visuelt Pro";
+  position: absolute;
+  font-size: 12vw;
+  color: #eaeaea;
+  top: 72%;
+  left: 5%;
+  opacity: 0;
+  -webkit-animation: intro_up 1s forwards 1.5s, bounce 1.5s infinite 2.5s;
+          animation: intro_up 1s forwards 1.5s, bounce 1.5s infinite 2.5s;
+}
+/*# sourceMappingURL=hero.css.map */

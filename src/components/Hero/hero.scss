@@ -1,0 +1,42 @@
+@import url("../IntroText/Visuelt/Visuelt.css");
+
+@keyframes intro_up {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  33% {
+    transform: translateY(0px);
+  } 
+  66% {
+    transform: translateY(-5vw);
+  }
+  100% {
+    transform: translateY(0px);
+
+  }
+}
+
+.hero__list {
+  position: relative;
+  margin: 5vh 0;
+}
+
+.arrow {
+  font-family: "Visuelt Pro";
+  position: absolute;
+  font-size: 12vw;
+  color: rgb(234,234,234);
+  top: 72%;
+  left: 5%;
+  opacity: 0;
+  animation: intro_up 1s forwards 1.5s, bounce 1.5s infinite 2.5s;
+}
